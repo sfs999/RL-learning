@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动手学强化学习 - 本地阅读</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .chapter-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+        
+        .chapter-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .chapter-card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        
+        .chapter-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .chapter-links a {
+            flex: 1;
+            min-width: 120px;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-html {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-html:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        
+        .btn-md {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .btn-md:hover {
+            background: #e0e0e0;
+        }
+        
+        .section-title {
+            color: white;
+            font-size: 2em;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chapter-links {
+                flex-direction: column;
+            }
+            
+            .chapter-links a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 动手学强化学习</h1>
+            <p>Hands-on RL - 本地阅读版本</p>
+        </header>
+        
+        <h2 class="section-title">基础篇</h2>
+        <div class="content-grid">
+            <div class="chapter-card">
+                <h2>前言</h2>
+                <p>欢迎来到强化学习的世界</p>
+                <div class="chapter-links">
+                    <a href="00_前言.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="00_前言.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>01 初探强化学习</h2>
+                <p>强化学习的基本概念和入门知识</p>
+                <div class="chapter-links">
+                    <a href="01_初探强化学习.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="01_初探强化学习.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>02 多臂老虎机</h2>
+                <p>探索与利用的经典问题</p>
+                <div class="chapter-links">
+                    <a href="02_多臂老虎机.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="02_多臂老虎机.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>03 马尔可夫决策过程</h2>
+                <p>强化学习的数学基础</p>
+                <div class="chapter-links">
+                    <a href="03_马尔可夫决策过程.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="03_马尔可夫决策过程.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>04 动态规划算法</h2>
+                <p>基于模型的规划方法</p>
+                <div class="chapter-links">
+                    <a href="04_动态规划算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="04_动态规划算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>05 时序差分算法</h2>
+                <p>无模型预测方法</p>
+                <div class="chapter-links">
+                    <a href="05_时序差分算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="05_时序差分算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>06 Dyna-Q算法</h2>
+                <p>整合规划与学习</p>
+                <div class="chapter-links">
+                    <a href="06_Dyna-Q算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="06_Dyna-Q算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">进阶篇</h2>
+        <div class="content-grid">
+            <div class="chapter-card">
+                <h2>07 DQN算法</h2>
+                <p>深度 Q 网络开创性工作</p>
+                <div class="chapter-links">
+                    <a href="07_DQN算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="07_DQN算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>08 DQN改进算法</h2>
+                <p>Double DQN、Dueling DQN 等改进</p>
+                <div class="chapter-links">
+                    <a href="08_DQN改进算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="08_DQN改进算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>09 策略梯度算法</h2>
+                <p>基于策略的优化方法</p>
+                <div class="chapter-links">
+                    <a href="09_策略梯度算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="09_策略梯度算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>10 Actor-Critic算法</h2>
+                <p>结合价值与策略的方法</p>
+                <div class="chapter-links">
+                    <a href="10_Actor-Critic算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="10_Actor-Critic算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>11 TRPO算法</h2>
+                <p>信任区域策略优化</p>
+                <div class="chapter-links">
+                    <a href="11_TRPO算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="11_TRPO算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>12 PPO算法</h2>
+                <p>近端策略优化（广泛应用）</p>
+                <div class="chapter-links">
+                    <a href="12_PPO算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="12_PPO算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>13 DDPG算法</h2>
+                <p>深度确定性策略梯度</p>
+                <div class="chapter-links">
+                    <a href="13_DDPG算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="13_DDPG算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>14 SAC算法</h2>
+                <p>柔性 Actor-Critic</p>
+                <div class="chapter-links">
+                    <a href="14_SAC算法.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="14_SAC算法.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">前沿篇</h2>
+        <div class="content-grid">
+            <div class="chapter-card">
+                <h2>15 模仿学习</h2>
+                <p>从专家示范中学习</p>
+                <div class="chapter-links">
+                    <a href="15_模仿学习.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="15_模仿学习.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>16 模型预测控制</h2>
+                <p>基于模型的滚动优化</p>
+                <div class="chapter-links">
+                    <a href="16_模型预测控制.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="16_模型预测控制.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>17 基于模型的策略优化</h2>
+                <p>学习环境模型并优化策略</p>
+                <div class="chapter-links">
+                    <a href="17_基于模型的策略优化.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="17_基于模型的策略优化.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>18 离线强化学习</h2>
+                <p>从静态数据集中学习</p>
+                <div class="chapter-links">
+                    <a href="18_离线强化学习.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="18_离线强化学习.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>19 目标导向的强化学习</h2>
+                <p>多任务与目标条件策略</p>
+                <div class="chapter-links">
+                    <a href="19_目标导向的强化学习.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="19_目标导向的强化学习.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>20 多智能体强化学习入门</h2>
+                <p>多智能体系统基础</p>
+                <div class="chapter-links">
+                    <a href="20_多智能体强化学习入门.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="20_多智能体强化学习入门.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>21 多智能体强化学习进阶</h2>
+                <p>协作与竞争中的学习</p>
+                <div class="chapter-links">
+                    <a href="21_多智能体强化学习进阶.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="21_多智能体强化学习进阶.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+            
+            <div class="chapter-card">
+                <h2>22 总结与展望</h2>
+                <p>强化学习的未来发展方向</p>
+                <div class="chapter-links">
+                    <a href="22_总结与展望.html" class="btn-html" target="_blank">📖 HTML 版</a>
+                    <a href="22_总结与展望.md" class="btn-md" target="_blank">📝 Markdown 版</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 动手学强化学习 | 本地阅读版本</p>
+            <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">
+                原书地址：<a href="https://hrl.boyuai.com" target="_blank" style="color: white; text-decoration: underline;">https://hrl.boyuai.com</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">
+                GitHub 仓库：<a href="https://github.com/boyu-ai/Hands-on-RL" target="_blank" style="color: white; text-decoration: underline;">Hands-on-RL</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
